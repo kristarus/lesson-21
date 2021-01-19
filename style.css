@@ -1,0 +1,64 @@
+/* body * {
+  margin: 10px;
+  border: 1px solid greenyellow;
+}
+
+.red {
+  padding: 1rem;
+  background-color: red;
+}
+
+.blue {
+  padding: 1rem;
+  background-color: blue;
+} */
+
+#desk {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: plum;
+}
+
+#inputTitle {
+  border: 2px solid purple;
+  width: 70%;
+}
+
+#inputDescription {
+  border: 2px solid purple;
+  width: 70%;
+}
+
+#btnSubmit {
+  background-color: rgb(229, 201, 243);
+  border: 2px solid purple;
+}
+
+.margin_t_b {
+  margin: 5px 0;
+}
+
+.padding_all {
+  padding: 10px;
+}
+
+#infoDesk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid purple;
+  width: 80%;
+}
+
+.info {
+  width: 80%;
+  border: 2px solid purple;
+}
+
+.btn {
+  background-color: rgb(229, 201, 243);
+  border: 2px solid purple;
+}
