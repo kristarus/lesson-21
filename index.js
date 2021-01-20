@@ -1,21 +1,3 @@
-// const buttonWrapper = document.querySelector(".button__wrapper");
-// buttonWrapper.addEventListener("click", (event) => {
-//   if (event.target.closest(".btn")) {console.log("YES")}
-
-//   console.log(event.target.textContent);
-// if (event.tar)
-
-// });
-
-// for (let elem of document.querySelectorAll("*")) {
-//   elem.addEventListener(
-//     "click",
-//     () => alert(`Погружение: ${elem.tagName}`),
-//     true
-//   );
-//   elem.addEventListener("click", () => alert(`Всплытие: ${elem.tagName}`));
-// }
-
 let array = [];
 
 const desk = document.querySelector("#desk");
