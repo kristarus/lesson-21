@@ -2,6 +2,7 @@ let array = [];
 
 const desk = document.querySelector("#desk");
 const infoDesk = document.querySelector("#infoDesk");
+
 let titleEdit;
 let descriptionEdit;
 let dateEdit;
