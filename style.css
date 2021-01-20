@@ -37,6 +37,16 @@
   border: 2px solid purple;
 }
 
+#btnConfirm {
+  background-color: rgb(229, 201, 243);
+  border: 2px solid purple;
+}
+
+#btnClose {
+  background-color: rgb(229, 201, 243);
+  border: 2px solid purple;
+}
+
 .margin_t_b {
   margin: 5px 0;
 }
@@ -49,16 +59,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid purple;
+  border: 0px solid purple;
   width: 80%;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0;
 }
 
 .info {
   width: 80%;
   border: 2px solid purple;
+  background-color: rgb(255, 214, 253);
 }
 
 .btn {
   background-color: rgb(229, 201, 243);
   border: 2px solid purple;
+}
+
+/* modal */
+
+.editModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(212, 0, 255, 0.5);
+  display: none;
+}
+
+.editModal_window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  margin-right: -50%;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+  background-color: rgb(243, 205, 255);
+
+  border: 2px solid purple;
+}
+
+#titleEdit {
+  border: 2px solid purple;
+  width: 70%;
+}
+
+#titleDescription {
+  border: 2px solid purple;
+  width: 70%;
 }

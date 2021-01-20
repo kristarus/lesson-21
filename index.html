@@ -7,23 +7,6 @@
     <title>Lesson 21</title>
   </head>
   <body>
-    <!-- <form>
-      FORM
-      <div>
-        DIV
-        <p>P</p>
-      </div>
-    </form> -->
-    <!-- 
-    <div class="button__wrapper">
-      <div class="red">
-        <button class="btn">button</button>
-      </div>
-      <div class="blue">
-        <button class="btn">button</button>
-      </div>
-    </div> -->
-
     <div id="desk">
       <input
         type="text"
@@ -40,6 +23,29 @@
       <button id="btnSubmit" class="margin_t_b">Submit</button>
 
       <div id="infoDesk"></div>
+
+      <!-- modal -->
+
+      <div class="editModal">
+        <div class="editModal_window">
+          <input
+            type="text"
+            placeholder="Title:"
+            id="titleEdit"
+            class="margin_t_b"
+          />
+          <input
+            type="text"
+            placeholder="Description:"
+            id="titleDescription"
+            class="margin_t_b"
+          />
+          <div>
+            <button id="btnConfirm" class="margin_t_b">Confirm</button>
+            <button id="btnClose" class="margin_t_b">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>
