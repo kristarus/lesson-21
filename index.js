@@ -16,11 +16,11 @@ desk.addEventListener("click", (event) => {
 });
 
 desk.addEventListener("mouseover", (event) => {
-  addShadow();
+  addShadow(event);
 });
 
 desk.addEventListener("mouseout", (event) => {
-  deleteShadow();
+  deleteShadow(event);
 });
 
 // ================functions=====================
@@ -73,7 +73,7 @@ function submitInfo() {
   drawAllInfo(array);
 }
 
-function deleteInfo() {
+function deleteInfo(event) {
   const info = event.target.closest(".info");
   const title = info.querySelector(".title").textContent;
   const description = info.querySelector(".description").textContent;
@@ -90,7 +90,7 @@ function deleteInfo() {
   });
 }
 
-function findEditInfo() {
+function findEditInfo(event) {
   const editModal = document.querySelector(".editModal");
   const info = event.target.closest(".info");
   titleForEdit = info.querySelector(".title").textContent;
@@ -133,9 +133,9 @@ function findEvent(event) {
   if (event.target.closest("#btnSubmit")) {
     submitInfo();
   } else if (event.target.closest(".btnDelete")) {
-    deleteInfo();
+    deleteInfo(event);
   } else if (event.target.closest(".btnEdit")) {
-    findEditInfo();
+    findEditInfo(event);
   } else if (event.target.closest("#btnClose")) {
     closeModal();
   } else if (event.target.closest("#btnConfirm")) {
@@ -143,7 +143,7 @@ function findEvent(event) {
   }
 }
 
-function addShadow() {
+function addShadow(event) {
   const info = event.target.closest(".info");
 
   if (info != null) {
@@ -151,7 +151,7 @@ function addShadow() {
   }
 }
 
-function deleteShadow() {
+function deleteShadow(event) {
   const info = event.target.closest(".info");
 
   if (info != null) {
